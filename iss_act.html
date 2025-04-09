@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Hexagonal prism (left) -->
+      <a-entity geometry="primitive: cylinder; segmentsRadial: 6" 
+                position="-3 1 -4" color="#FF5733"></a-entity>
+      
+      <!-- Dodecahedron (center) -->
+      <a-entity geometry="primitive: dodecahedron; radius: 1.2" 
+                position="0 1.2 -4" color="#33C3FF"></a-entity>
+      
+      <!-- Cone (right) -->
+      <a-entity geometry="primitive: cone; radiusBottom: 1; radiusTop: 0.1; height: 2" 
+                position="3 1 -4" color="#9D33FF"></a-entity>
+
+      <!-- Ground (slightly wider) -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="6" color="#7BC8A4"></a-plane>
+      
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
